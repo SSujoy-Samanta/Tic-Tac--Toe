@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(77, 5, 60);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.score{
+    /* visibility: hidden; */
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(18, 189, 181);
+    text-shadow: 1px 1px 2px rgb(107, 3, 71), 0 0 1em blue, 0 0 0.2em blue;
+}
+.score.hide{
+    visibility: hidden;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .5rem;
+    
+}
+.box{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(7, 86, 139);
+    border: none;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+}
+.restart{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    align-items: center;
+}
+.restart button{
+    padding: .2rem;
+    background-color: rgb(2, 26, 78);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: .3rem;
+}
